@@ -1,0 +1,19 @@
+{
+  "name": "pea-styles",
+  "version": "0.0.2",
+  "description": "The pea3nut's style.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pea3nut/pea-styles.git"
+  },
+  "keywords": [
+    "pea3nut",
+    "style"
+  ],
+  "author": "pea3nut",
+  "license": "MPL-2.0",
+  "bugs": {
+    "url": "https://github.com/pea3nut/pea-styles/issues"
+  },
+  "homepage": "https://github.com/pea3nut/pea-styles#readme"
+}

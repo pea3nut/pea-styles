@@ -1,0 +1,95 @@
+.text-body{
+    position: relative;
+    font-size:16px;
+    $allPLineHeight:1.7em;
+    letter-spacing:0.1em;
+    padding-left:0.6em;
+    padding-right:0.6em;
+    width:100%;
+    word-break:break-all;
+    strong{
+        @media print{
+            text-decoration: underline;
+        }
+    }
+    p{
+        text-indent:2em;
+        margin:0 0 1em 0;
+        max-width:100%;
+        line-height:$allPLineHeight;
+    }
+    ul li{
+        margin-bottom: 0.3em;
+        line-height:1.5em;
+    }
+    img{
+        max-width:96%;
+        min-width:0;
+        width:auto;
+        margin-left:-1.5em;
+    }
+    blockquote{
+        border-left:7px solid #afb3b4;
+        margin:0.5em 0 0.7em 0;
+        color:#585c5d;
+        background-color: #e1e1e1;
+        padding:0.2em 0 0.2em 0.4em;
+        p{
+            text-indent:0;
+            margin: 0.2em 0 0.2em 0;
+            &.markdown-render-quite---{
+                text-align: right;
+            }
+        }
+    }
+    a{
+        letter-spacing:0;
+    }
+    pre{
+        border:1px dotted #2b2d2f;
+        background-color: #e6e6e6;
+        padding:0.5em 1em;
+        letter-spacing:0;
+        code{
+            background-color: inherit;
+        }
+    }
+    code{
+        background-color: #f9f2f4;
+        letter-spacing:0;
+    }
+    .fa{
+        text-indent:0;
+    }
+    .tb-not{
+        font-style: italic;
+        text-decoration : line-through;
+        margin-right:0.2em;
+    }
+    .tb-detail{
+        display: inline-block;
+        text-indent:0;
+        font-style: normal;
+        cursor: pointer;
+        border:1px solid #2b2d2f;
+        padding:0 #{($allPLineHeight - 1em)/4};
+        margin:0 #{($allPLineHeight - 1em)/4};
+        line-height:($allPLineHeight - 1em)/2+1em;
+    }
+    .tb-hidden{
+        font-style: normal;
+        color:#fff;
+        background-color: #fff;
+        border-bottom:1px solid #2b2d2f;
+        &.tbh-hidden{
+            color:#fff !important;
+        }
+        &.tbh-active ,&:hover{
+            color:inherit !important;
+            border:none !important;
+        }
+    }
+    @media only screen and (max-width: 768px) {
+        letter-spacing:1px;
+    }
+}
